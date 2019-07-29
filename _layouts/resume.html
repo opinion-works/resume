@@ -1,0 +1,68 @@
+---
+layout: default
+---
+
+<div id="home" class="section scrollspy">
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">{{ site.about.owner.name }}</h1>
+        <div class="row center">
+          <h5 class="header col s12 light white-text">{{ site.about.owner.title }}</h5>
+        </div>
+        <p style="text-align:center;"><a class="waves-effect waves-light btn grey darken-3 z-depth-3" href="{{ site.about.owner.blog.uri }}"><i class="material-icons right">library_books</i>博客</a></p>
+        <br><br>
+      </div>
+    </div>
+    <div class="parallax"><img src="{{site.data.resume.parallax_image_one}}" alt="孙建康视差背景" referrerpolicy="no-referrer"></div>
+  </div>
+</div>
+
+<div id="cookies" style="display:{{site.cookies_banner}}">
+  <p style="text-align:left; padding-left:8px"><a value="hide/show" id="check" class="waves-effect waves-light green lighten-1 btn btn-floating pulse" onclick="Materialize.toast('{{site.cookie_accept_message}}', 2000)" ><i class="material-icons">check</i></a></p>
+  {% include cookies.html %}
+</div>
+
+<div class="container" style="padding:20px;">
+  <div id="portfolio" class="section scrollspy">
+
+  <h3 style="text-align:center;">简介</h3>
+
+  {% include portfolio.html %}
+</div>
+
+
+</div>
+
+<div class="container" style="padding:20px;">
+  <div id="skills" class="section scrollspy">
+   <h3 style="text-align:center;">技能 & 工具</h3>
+   {% include skills.html %}
+ </div>
+</div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="{{site.data.resume.parallax_image_two}}" alt="孙建康视差背景" referrerpolicy="no-referrer"></div>
+  </div>
+
+
+<div class="container" style="padding:20px;">
+  <div id="contact" class="section scrollspy">
+  <h3 style="text-align:center;">联系我</h3>
+  {% include contact.html %}
+</div>
+</div>
+
+
+
+
+{% include nav-burger.html %}

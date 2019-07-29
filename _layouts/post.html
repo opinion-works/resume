@@ -1,0 +1,55 @@
+---
+layout: default-blog
+---
+
+<article class="posts">
+  <h2>{{ page.title }}</h2>
+
+  <div clsss="meta">
+    <span class="date">
+      {{ page.date | date: "%Y-%m-%d" }}
+    </span>
+
+    <ul class="tag">
+      {% for tag in page.tags %}
+      <li>
+        <a href="{{ site.url }}{{ site.baseurl }}/taxis#{{ tag }}">
+          {{ tag }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="entry">
+    {{ content }}
+  </div>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <ins class="adsbygoogle"
+       style="display:block; text-align:center;"
+       data-ad-layout="in-article"
+       data-ad-format="fluid"
+       data-ad-client="ca-pub-2242052934688209"
+       data-ad-slot="2041589305"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</article>
+
+<div class="pagination">
+  {% if page.previous.url %}
+  <span class="prev" >
+    <a href="{{ site.url }}{{ site.baseurl }}{{ page.previous.url }}">
+      ← 上一篇
+    </a>
+  </span>
+  {% endif %}
+  {% if page.next.url %}
+  <span class="next" >
+    <a href="{{ site.url }}{{ site.baseurl }}{{ page.next.url }}">
+      下一篇 →
+    </a>
+  </span>
+  {% endif %}
+</div>

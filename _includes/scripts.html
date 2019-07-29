@@ -1,0 +1,26 @@
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.bootcss.com/materialize/1.0.0/js/materialize.min.js"></script>
+<script type="text/javascript">
+ (function($){
+   $(function(){
+     $('.button-collapse').sidenav();
+     $('.parallax').parallax();
+     $('.collapsible').collapsible();
+     $('.carousel.carousel-slider').carousel({fullWidth: true});
+     $('.materialboxed').materialbox();
+     $('.scrollspy').scrollSpy();
+     $('.fixed-action-btn').floatingActionButton({
+       direction: 'left'
+     });
+
+     if (localStorage.getItem('cookieconsent') === 'true') {
+       $('#cookies').hide();
+     }
+
+     $('#cookies').on('click', function(event) {
+       localStorage.setItem('cookieconsent', 'true');
+       $('#cookies').toggle('hide');
+     });
+   });
+ })(jQuery);
+</script>

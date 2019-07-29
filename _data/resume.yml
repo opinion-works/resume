@@ -1,0 +1,14 @@
+display_footer: inital  #change this to 'none' if you want to hide the footer copyright text
+parallax_image_one: https://ws1.sinaimg.cn/large/87380558ly1g4w19k8buhj21hc0zkwht.jpg
+parallax_image_two: https://ws1.sinaimg.cn/large/87380558ly1g4w19jkp22j21400n7td7.jpg
+
+github: https://github.com/sjkyspa
+medium: https://medium.com
+
+# Google tracking, if both are filled, tag manager will prevail. Set up GA through GTM in that case
+tag_manager_id: # This looks something like GTM-XXXXXXX
+google_analytics_tracking_id: # This looks something like UA-000000000-0 Head over to https://analytics.google.com/ to setup.
+
+cookie_accept_message: Thanks! # The pop-up dialog that appears after accepting the cookie notice.
+
+syntax_highlighting: true # include the css for syntax highlighting

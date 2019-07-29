@@ -1,0 +1,65 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" href="{{site.baseurl}}/assets/icons/favicon.png" type="image/x-icon">
+
+      {% if page.meta %}
+      {% include {{page.meta}} %}
+      {% endif %}
+
+      {% if page.links %}
+      {% include {{page.links}} %}
+      {% endif %}
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-2242052934688209",
+        enable_page_level_ads: true
+      });
+    </script>
+      {% if jekyll.environment == 'production' %}
+      {% include ba.html %}
+      {% endif %}
+      {% seo %}
+      <script>
+        (function(){
+          var bp = document.createElement('script');
+          var curProtocol = window.location.protocol.split(':')[0];
+          if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+          }
+          else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+          }
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(bp, s);
+        })();
+      </script>
+  </head>
+  <body>
+    {% if site.tag_manager_id and jekyll.environment == 'production' %}
+      <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{site.tag_manager_id}}"
+          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+       <!-- End Google Tag Manager (noscript) -->
+        {% endif %}
+      {% if page.header %}
+      {% include {{ page.header }} %}
+      {% endif %}
+
+
+        {{content}}
+      {% if page.scripts %}
+      {% include {{ page.scripts }} %}
+      {% endif %}
+  </body>
+  {% if page.footer %}
+  {% include {{ page.footer }} %}
+  {% endif %}
+  </body>
+
+
+</html>

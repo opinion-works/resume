@@ -1,0 +1,103 @@
+title: 孙建康
+email: rising.lambda@gmail.com
+description: 孙建康的个人简历
+faith: 为者常成，行者常至
+lang: zh_CN
+baseurl:  /
+url: https://neo.opinion.works
+avatar: https://ae01.alicdn.com/kf/Hec6ee1c6a2294c24ab55bee99c369f621.png
+# seo plugin
+author: 孙建康
+social:
+  name: 孙建康
+  links:
+    - https://www.facebook.com/rising.lambda
+    - https://www.linkedin.com/in/%E5%AD%99%E5%BB%BA%E5%BA%B7/
+    - https://github.com/sjkyspa
+    - https://weibo.com/opinionworks
+logo: /assets/images/opinionworks.png
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+sass:
+  style: compressed
+plugins:
+  - jekyll-feed
+  - jekyll-assets
+  - jekyll-minifier
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      links: links.html
+      scripts: scripts.html
+      header: header.html
+      footer: footer.html
+      meta: meta.html
+      image: /assets/images/desk.jpg
+
+compress_html:
+  clippings: []
+  comments: []
+  endings: []
+  ignore:
+    envs: []
+  blanklines: false
+  profile: false
+  startings: []
+
+about:
+  owner:
+    name: 孙建康
+    title: 软件开发/全栈工程师
+    github:
+      uri: https://github.com/sjkyspa
+    blog:
+      uri: https://opinion.works
+
+
+
+
+# Pagination
+paginate: 8
+
+excerpt_separator: <!-- more -->
+paginate_path: /page:num/
+# Includes an icon in the footer for each username you enter
+footer-links:
+  weibo: sjkyspa #请输入你的微博个性域名 https://www.weibo.com/<thispart>
+  behance: # https://www.behance.net/<username>
+  dribbble:
+  email: rising.lambda@gmail.com
+  facebook: rising.lambda
+  flickr:
+  github: sjkyspa
+  googleplus: # anything in your profile username that comes after plus.google.com/
+  instagram:
+  linkedin:
+  pinterest:
+  rss: # just type anything here for a working RSS icon
+  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  tumblr: # https://<username>.tumblr.com
+  twitter:
+  youtube: # channel/<your_long_string> or user/<user-name>
+
+# Text under the icons in footer
+footer-text: Copyright (c) 2019 neo.opinion.works
+
+# Enter your Disqus shortname (not your username) to enable commenting on posts
+# You can find your shortname on the Settings page of your Disqus account
+disqus: # fromendworld
+
+# Gitalk
+gitalk:
+  clientID: 47178fc1af282e823505
+  clientSecret: 6a31e387eddad2cbd9face8d8d046a8961328138
+  repo: endworld
+  owner: FromEndWorld
