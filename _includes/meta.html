@@ -5,3 +5,8 @@
 <meta name="referrer" content="same-origin">
 <meta name="referrer" content="no-referrer-when-downgrade"/>
 <meta http-equiv="content-language" content="cn"/>
+{% if site.webmaster_verifications %}
+  {% if site.webmaster_verifications.360 %}
+<meta name="360-site-verification" content="{{ site.webmaster_verifications.360 }}" />
+  {% endif %}
+{% endif %}
