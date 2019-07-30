@@ -47,12 +47,12 @@ defaults:
       image: /assets/images/desk.jpg
 
 compress_html:
-  clippings: []
+  clippings: all
   comments: []
-  endings: []
+  endings: all
   ignore:
     envs: []
-  blanklines: false
+  blanklines: true
   profile: false
   startings: []
 
